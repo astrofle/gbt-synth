@@ -1,0 +1,7 @@
+fitsio
+numpy
+pandas
+astropy
+spectral-cube
+regions==0.5
+git+https://github.com/astrofle/groundhog.git@large_files
