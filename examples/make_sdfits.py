@@ -38,8 +38,6 @@ if __name__ == '__main__':
 
     # Create the sky model. It will also create an SDFITS assuming a fully sampled observation.
     make_synth('NGC2841', shape, cards, sources, noise, nu0=restfreq, save_cube=True, convolve_cube=True, hpbw=hpbw)
-    # Use the sky model to simulate an observation of the regions defined in 
-    # "/home/scratch/psalas/user_support/AGBT22A_287/cats/ngc2841.csv".
-    sample_sky.main("NGC2841_tracks_sdfits.fits", "NGC2841_cube.fits", 
-                    "/home/scratch/psalas/user_support/AGBT22A_287/cats/ngc2841.csv",
+    # Use the sky model to simulate an observation of the regions defined in ngc2841.csv.
+    sample_sky.main("NGC2841_tracks_sdfits.fits", "NGC2841_cube.fits", "ngc2841.csv",
                     cards, nu0=restfreq)
